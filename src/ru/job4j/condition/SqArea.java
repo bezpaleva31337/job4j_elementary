@@ -1,24 +1,14 @@
 package ru.job4j.condition;
 
 public class SqArea {
-    public static double height(double p, double k) {
-        return p / (2 * (k + 1));
-    }
-
-    public static double length(double h, double k) {
-        return (h * k);
-    }
-
-    public static double square(double L, double h) {
+    public static double square(int p, int k) {
+        double h = p / (2 * (k + 1));
+        double L =  (h * k);
         return (L * h);
     }
 
     public static void main(String[] args) {
-        double result1 = SqArea.height(6, 2);
-        System.out.println(" p = 6, k = 2, Height = " + result1);
-        double result2 = SqArea.length(result1, 2);
-        System.out.println(" Length = " + result2);
-        double result3 = SqArea.square(result2, result1);
-        System.out.println(" Square = " + result3);
+        double result1 = SqArea.square(6, 2);
+        System.out.println(" p = 4, k = 1, s = 1, real = " + result1);
     }
 }
