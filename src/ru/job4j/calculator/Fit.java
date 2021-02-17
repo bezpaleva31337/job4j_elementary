@@ -9,7 +9,7 @@ public class Fit {
     public static double womanWeight(short height) {
         return (height - 110) * 1.15;
     }
-
+//комментарий для изменений
     public static void main(String[] args) {
         short height = 172;
         double man = Fit.manWeight(height);
